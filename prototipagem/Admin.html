@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ANIMALEC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 66px;
+            background: #212529 !important;
+        }
+
+        header img {
+            position: absolute;
+            width: 250px;
+            left: 30px;
+            top: 2px
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, .75);
+        }
+
+        header nav ul {
+            width: 395px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            float: right;
+            list-style: none;
+            margin: 25px 30px;
+        }
+
+        section > h1 {
+            margin: 120px auto 40px auto;
+            font-size: 3rem;
+            line-height: 2.5rem;
+            text-align: center;
+            font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .custom-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-line hr {
+            width: 100%;
+            max-width: 17rem;
+            height: 0.25rem;
+            background-color: #2c3e50;
+            border-radius: 1rem;
+            border-color: #2c3e50 !important;
+        }
+
+        .custom-line hr:first-child {
+            margin-right: 1rem;
+        }
+
+        .custom-line hr:last-child {
+            margin-left: 1rem;
+        }
+
+        .custom-line .star {
+            color: #2c3e50 !important;
+            font-size: 8px;
+        }
+
+        .card {
+            width: 200px;
+            height: 180px;
+            background: #2c3e50 !important;
+            border-radius: 8px;
+            margin: 2px 15px;
+            margin-bottom: 1rem !important;
+            text-align: center;
+        }
+
+        .card h1 {
+            color: #fff !important;
+            background: rgba(0, 0, 0, .03);
+            padding: .5rem 1rem;
+            font-weight: normal;
+            font-size: 1rem;
+            font-family: "Segoe UI", sans-serif;
+            text-transform: capitalize;
+        }
+
+        .card > div {
+            margin: 25px 0;
+
+        }
+
+        .card a {
+            color: #1abc9c;
+        }
+
+        section ul {
+            display: flex;
+            width: 690px;
+            margin: 30px auto;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .navbar-toggler {
+            display: none;
+        }
+
+        @media (max-width: 720px) {
+            header nav ul {
+                display: none;
+                flex-direction: column;
+                float: left;
+                width: 100%;
+                list-style: none;
+                background: #2a2f34 !important;
+                margin: 60px 0 30px 0;
+                padding: 20px;
+            }
+
+            header nav ul li {
+                padding: 8px 0;
+            }
+
+            .navbar-toggler {
+                display: block;
+                padding: .25rem .75rem;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: .25rem;
+                transition: box-shadow .15s ease-in-out;
+
+                float: right;
+                margin: 10px;
+            }
+
+            .navbar-toggler-icon {
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                background-size: 100%;
+
+                background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center;
+            }
+
+            section ul {
+                width: auto;
+                justify-content: center;
+            }
+
+            .card {
+                width: 450px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card h1 {
+                text-align: left;
+                width: 180px;
+                margin: auto 0;
+            }
+
+            .card > div {
+                position: absolute;
+                right: 130px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="#">
+        <img src="animalec_line.png" alt="logo"/>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="#">ANIMAIS</a></li>
+            <li><a href="#">QUIZZES</a></li>
+            <li><a href="#">CONTACTOS</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">ADMIN</a></li>
+        </ul>
+    </nav>
+    <button type="button" aria-label="Toggle navigation" aria-controls="nav-collapse" aria-expanded="false"
+            class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+</header>
+<section>
+    <h1>GESTÃO DO ANIMALEC</h1>
+    <div class="custom-line">
+        <hr>
+        <div class="star"><i class="fas fa-star fa-5x"></i></div>
+        <hr>
+    </div>
+    <ul>
+        <li>
+            <div class="card">
+                <h1>UTILIZADORES</h1>
+                <div>
+                    <a href="#"><i class="fas fa-users fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h1>ANIMAIS</h1>
+                <div>
+                    <a href="#"><i class="fas fa-dog fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h1>QUIZZES</h1>
+                <div>
+                    <a href="#"><i class="fas fa-file-alt fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h1>QUESTÕES</h1>
+                <div>
+                    <a><i class="fas fa-question-circle fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h1>PATROCINADORES</h1>
+                <div>
+                    <a href="./ListSponsors.html"><i class="fas fa-hand-holding-usd fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h1>ESPECIALISTAS</h1>
+                <div>
+                    <a href="./ListExperts.html"><i class="fas fa-chalkboard-teacher fa-5x"></i> </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+</body>
+</html>
